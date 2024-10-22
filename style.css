@@ -1,0 +1,289 @@
+section {
+  padding-top: 7rem;
+}
+
+.nav-link {
+  color: #fff;
+  cursor: pointer;
+}
+
+.nav-link:hover {
+  color: #fff;
+  background-color: #51236d;
+}
+.navbar-brand {
+  color: #fff;
+  cursor: pointer;
+}
+
+.btn {
+  color: #fff;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+body {
+  background-color: #1c022c;
+  min-height: 900px;
+  font-family: 'ubuntu', sans-serif;
+}
+
+/*Hero*/
+
+section h1 {
+  color: #fff;
+  font-size: 2, 5rem;
+}
+
+#hero {
+  color: #fff;
+  min-height: 100vh;
+}
+
+#hero h1 {
+  font-size: 3rem;
+}
+
+#hero h2 {
+  font-weight: 300;
+}
+
+#hero p {
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+
+.btn-custom1 {
+  background-color: #51236d;
+  text-align: center;
+  color: #fff;
+  min-width: 100px;
+  height: 40px;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.btn-custom1:hover {
+  box-shadow: 0 0 5px rgba(251, 0, 255, 0.8);
+}
+
+.btn-custom2 {
+  background-color: #a200ff;
+  text-align: center;
+  color: #fff;
+  min-width: 100px;
+  height: 40px;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.btn-custom2:hover {
+  box-shadow: 0 0 5px rgba(251, 0, 255, 0.8);
+}
+
+/*about*/
+hr {
+  width: 35%;
+  height: 5px;
+  color: #fff;
+  margin: 0 auto;
+  opacity: 100%;
+}
+
+#about {
+  min-height: 300px;
+  width: 100%;
+  background-color: #51236d;
+  color: #fff;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.container-custom {
+  margin-left: 10%; /* Mengatur margin kiri */
+  margin-right: 10%; /* Mengatur margin kanan */
+  padding-left: 15px; /* Agar tidak menempel dengan tepi */
+  padding-right: 15px; /* Agar tidak menempel dengan tepi */
+}
+
+#about .container {
+  margin-right: 50px; /* Ganti dengan nilai margin yang diinginkan */
+}
+
+/*skill*/
+#skill {
+  min-height: 600px;
+  width: 100%;
+  color: white;
+  background-color: #1c022c;
+}
+
+#skill img {
+  width: 12%;
+  margin: 10px;
+}
+
+#skill .card {
+  background-color: white;
+  height: 340px;
+}
+
+#ed {
+  background-color: #1c022c;
+}
+
+#ed .card {
+  background-color: #51236d;
+  margin-bottom: 30px;
+}
+
+.ed-konten {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: medium;
+}
+
+.card-custom-width {
+  width: 80%;
+}
+
+/*sertif*/
+#sertifikat {
+  margin-top: 3px;
+  padding: 70px;
+  padding-bottom: 80px;
+  background-color: #51236d;
+}
+
+#sertifikat img {
+  width: 30%;
+  padding: 10px;
+}
+
+#moreImages {
+  display: none; /* Sembunyikan gambar tambahan pada awalnya */
+}
+
+#loadMore {
+  margin-top: 20px;
+}
+
+/* Agar gambar tidak melampaui ukuran aslinya */
+.image-container img {
+  max-width: 100%; /* Gambar akan menyesuaikan lebar kontainer */
+  height: auto; /* Memastikan rasio aspek tetap */
+  margin: 10px; /* Spasi antar gambar */
+}
+
+/* Flexbox untuk gambar, default horizontal */
+.image-container {
+  display: flex;
+  justify-content: center; /* Posisikan gambar di tengah */
+  flex-wrap: wrap; /* Gambar akan berbaris di bawah jika ruang tidak cukup */
+}
+
+/* Responsif: ubah orientasi gambar menjadi vertikal di layar kecil */
+@media (max-width: 768px) {
+  .image-container {
+    flex-direction: column; /* Tumpukan gambar secara vertikal */
+    align-items: center; /* Pusatkan gambar secara vertikal */
+  }
+}
+
+/* CSS untuk tombol ungu */
+.btn-purple {
+  background-color: #1c022c; /* Warna ungu untuk latar belakang */
+  border-color: #1c022c; /* Warna ungu untuk border */
+  color: white; /* Warna teks putih */
+}
+
+.btn-purple:hover {
+  background-color: #2d033f; /* Warna saat dihover */
+  border-color: #2d033f;
+  color: white;
+}
+
+/* Gambar akan tetap 100% dari lebar kolomnya dan stack ke bawah pada layar kecil */
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Tambahkan margin untuk gambar agar ada jarak */
+.pt-3 {
+  padding-top: 1rem;
+}
+
+/* Style untuk custom card */
+.custom-card {
+  background-color: #51236d; /* Warna card ungu */
+  color: white; /* Warna teks putih */
+  border: none; /* Hilangkan border default */
+  padding: 25px;
+}
+
+/* Gambar berada di sebelah kiri pada layar besar */
+.card-img-left {
+  max-width: 250px; /* Ukuran gambar maksimal */
+  margin-right: 20px; /* Jarak antara gambar dan teks */
+}
+
+/* Media query untuk layar kecil, gambar akan berada di atas teks */
+@media (max-width: 768px) {
+  .card-img-left {
+    max-width: 100%; /* Gambar menjadi lebar penuh pada layar kecil */
+    margin-right: 0; /* Hilangkan jarak untuk layout vertikal */
+    margin-bottom: 15px; /* Tambahkan jarak antara gambar dan teks */
+  }
+}
+
+/* Untuk tombol, ubah warna agar cocok dengan background */
+.btn-light {
+  background-color: #1c022c;
+  color: #fff;
+  border-color: #1c022c;
+}
+
+.btn-light:hover {
+  background-color: #2d033f;
+  color: #fff;
+  border-color: #2d033f;
+}
+
+.card-body img {
+  width: 100%; /* Mengambil seluruh lebar col-4 */
+  height: auto; /* Agar gambar tetap proporsional */
+}
+
+/* Warna tombol ungu */
+.btn-purple {
+  background-color: #51236d;
+  color: white;
+  border: none;
+}
+
+.btn-purple:hover {
+  background-color: #6a3f8b; /* Warna tombol saat di-hover */
+}
+
+.footer {
+  background-color: #1c022c;
+  bottom: 0;
+  width: 100%;
+}
+
+.social-icons a {
+  color: #1c022c;
+  font-size: 24px;
+}
+
+.social-icons a:hover {
+  color: #1c022c;
+}
+
+h5 {
+  margin-bottom: 20px;
+}
